@@ -1,0 +1,266 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+/** Globales **/
+
+body{
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+
+a{
+    text-decoration: none;
+    font-size: 2.2rem;
+    text-align: center;
+}
+
+h1, h2, h3{
+    text-align: center;
+    margin-bottom: 0;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+h3 {
+    font-size: 2.5rem;
+}
+
+p {
+    font-size: 2rem;
+}
+.contenedor{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.boton {
+    background-color: blue;
+    padding: 1rem;
+    color: white;
+    border-radius: 1rem;
+    font-weight: 700;
+}
+.rojo {
+    background-color: red;
+
+}
+.negro {
+    background-color: black;
+}
+
+/* Header */
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header--img {
+    height: 4rem;
+}
+
+.header__logo, 
+.header__nav {
+    width: 50%;
+}
+
+.header__logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.header__logo--texto {
+    text-align: center;
+}
+
+.header__nav {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+}
+
+@media (min-width: 480px) {
+    .header {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .header__logo {
+        justify-content: start;
+    }
+    .header__nav {
+        justify-content: end;
+    }
+}
+
+
+/* Presentación */
+
+.presentacion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (min-width: 768px) {
+    .presentacion {
+        flex-direction: row;
+        gap: 2rem;
+    }
+    .presentacion__imagen,
+    .presentacion__informacion{
+        width: 50%;
+    }
+}
+
+.presentacion__informacion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.presentacion--img {
+    width: 100%;
+}
+.presentacion__informacion--texto {
+    text-align: justify;
+}
+
+/* Lenguajes */
+
+.lenguajes {
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.lenguaje {
+    -webkit-box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.75);
+
+    width: 30%;
+    min-width: 30rem;
+    height: 40rem;
+    min-height: 43rem;
+    margin-bottom: 1rem;
+    padding-bottom: 48rem;
+    border-radius: 3rem;
+}
+
+.lenguaje img {
+    width: 10rem;
+    height: 10rem;
+    margin-top: 1rem;
+}
+
+/* Tecnologías */
+
+.tecnologias-contenido {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+@media (min-width: 768px) {
+    .tecnologias-contenido {
+        display: flex;
+        flex-direction: row;
+        gap: 4rem;
+    }
+    .tecnologias,
+    .tecnologias__imagenes {
+    width: 50%;
+    }
+}
+
+.tecnologia {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.tecnologias__imagenes img {
+    margin-top: 2rem;
+    width: 100%;
+}
+
+/* Footer */
+
+.footer {
+    background-color: black;
+    padding: .5rem;
+    margin-top: 2rem;
+}
+
+.footer__contenido {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (min-width: 768px) {
+    .footer__contenido {
+        flex-direction: row;
+        justify-content: space-around;
+        margin-top: 2rem;
+    }
+}
+
+.footer__logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer__logo--img {
+    width: 10rem;
+}
+
+.footer__logo--texto {
+    color: white;
+}
+
+.footer__nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (min-width: 480px) {
+    .footer__nav {
+        flex-direction: row;
+        align-items: center;
+        gap: 6rem;  
+    }
+}
+
+.footer__nav--enlace {
+    color: white;
+    font-size: 1.8rem;
+}
+
+.footer__autor {
+    color: white;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
